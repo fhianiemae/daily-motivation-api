@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Quote;
 use App\Models\StudyTip;
-use App\Models\Challenges;
+use App\Models\Challenge;
 
 class MotivationController extends Controller
 {
@@ -13,7 +13,7 @@ class MotivationController extends Controller
     {
         $quote = Quote::inRandomOrder()->first();
         $tip = StudyTip::inRandomOrder()->first();
-        $challenge = Challenges::inRandomOrder()->first();
+        $challenge = Challenge::inRandomOrder()->first();
 
         return response()->json([
             'date' => now()->toDateString(),

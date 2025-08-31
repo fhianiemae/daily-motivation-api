@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Challenges;
+use App\Models\Challenge;
 
 class ChallengeSeeder extends seeder
 {
@@ -65,8 +65,8 @@ class ChallengeSeeder extends seeder
         "Teach a chapter as if you are the teacher.",
         ];
 
-        foreach($challenges as $challenge) {
-        Challenges::create(['challenge' => $challenge]);
+        foreach ($challenges as $challenge) {
+            Challenge::create(['challenge' => $challenge]);
         }
     }
 }

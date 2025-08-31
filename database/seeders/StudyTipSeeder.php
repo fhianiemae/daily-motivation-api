@@ -119,6 +119,6 @@ class StudyTipSeeder extends Seeder
 
         foreach($tips as $tip) {
         StudyTip::create(['tip' => $tip]);
-    }
+        }
     }
 }

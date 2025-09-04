@@ -36,7 +36,6 @@ GET `/api/motivation/today`
     "instruction": "add ?mood=your_mood in URL example /api/motivation/today?mood=sad)"
 }
 
-```json
 {
   "date": "2025-08-29",
   "your_mood": "sad",

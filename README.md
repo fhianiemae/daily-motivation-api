@@ -4,6 +4,8 @@
 An API that provides students with daily motivation tailored to academics.
 
 ### Features
+-Mood
+-Mood Message
 - Daily Quote
 - Study Tip
 - Daily Challenge
@@ -24,7 +26,21 @@ GET `/api/motivation/today`
 ### Example Response
 ```json
 {
+    "message" : "How are you feeling today?"
+    "available_moods" : [
+        "happy",
+        "sad",
+        "stressed",
+        "tired"
+    ],
+    "instruction": "add ?mood=your_mood in URL example /api/motivation/today?mood=sad)"
+}
+
+```json
+{
   "date": "2025-08-29",
+  "your_mood": "sad",
+  "mood_message": "Huwag kang susuko",
   "quote": "Education is the most powerful weapon you can use to change the world. – Nelson Mandela",
   "study_tip": "Use the Pomodoro technique: 25 minutes study, 5 minutes rest.",
   "challenge": "Summarize today’s lesson in 3 bullet points."

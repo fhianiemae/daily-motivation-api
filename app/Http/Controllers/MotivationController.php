@@ -19,7 +19,7 @@ class MotivationController extends Controller
                 'Available Moods' => ['happy', 'sad', 'stressed', 'tired', 'neutral', 'motivated', 'anxious', 'confident', 'lonely', 
                 'excited', 'grateful', 'frustrated', 'hopeful', 
                 'bored', 'inspired'],
-                'Instruction' => 'Add <?mood="Your Mood"> sa URL (Example: ...../api/motivation/today?mood=happy)'
+                'Instruction' => 'Add (?mood=Your Mood) sa URL (Example: ...../api/motivation/today?mood=happy)'
             ]);
         }
 
